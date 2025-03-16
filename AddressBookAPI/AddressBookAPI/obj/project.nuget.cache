@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "NujHkQzP/A2bW8tCpmBxOVWcUveMBz8KpSz+cD3rmet96qo2ZsSbZtW9Sw/4FRK529qTUCkbciiJKFOW4b6RaQ==",
+  "dgSpecHash": "PXpsOZklzbDlBvlsGxhMyFTqg1jE9zT5xR8vx3cSSnkZg8ggJd4D9ql6P2v540rgLXNHhs8PTdTiccPydWhTwA==",
   "success": true,
   "projectFilePath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/AddressBookAPI.csproj",
   "expectedPackageFiles": [
-    "/Users/swapnilgupta/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/microsoft.data.sqlclient/2.1.7/microsoft.data.sqlclient.2.1.7.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/microsoft.entityframeworkcore/6.0.36/microsoft.entityframeworkcore.6.0.36.nupkg.sha512",

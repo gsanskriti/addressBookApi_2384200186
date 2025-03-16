@@ -1,11 +1,12 @@
 ﻿using System;
+using RepositoryLayer.Interface;
+
 namespace RepositoryLayer.Service
 {
-	public class AddressRL
+	public class AddressRL : IAddressRL
+
 	{
-		public AddressRL()
-		{
-		}
+		
 	}
 }
 

@@ -1,11 +1,10 @@
 ﻿using System;
+using BusinessLayer.Interface;
+
 namespace BusinessLayer.Service
 {
-	public class AddressBL
+	public class AddressBL : IAddressBL
 	{
-		public AddressBL()
-		{
-		}
+		
 	}
 }
-
