@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 
 // Add DbContext with SQL Server
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer("Server=localhost;Database=AddressBook;User Id=sa;Password=Sanskriti_3009;TrustServerCertificate=True;")));
+    options.UseSqlServer("Server=localhost;Database=AddressBook;User Id=sa;Password=Sanskriti_3009;TrustServerCertificate=True;"));
 
 var app = builder.Build();
 

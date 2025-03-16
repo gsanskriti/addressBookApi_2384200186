@@ -96,3 +96,4 @@
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.pdb
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.genruntimeconfig.cache
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/ref/AddressBookAPI.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/NLog.config
