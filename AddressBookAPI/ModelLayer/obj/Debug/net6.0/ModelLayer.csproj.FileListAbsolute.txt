@@ -1,0 +1,24 @@
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/bin/Debug/net6.0/ModelLayer.deps.json
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/bin/Debug/net6.0/ModelLayer.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/bin/Debug/net6.0/ModelLayer.pdb
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/obj/Debug/net6.0/refint/ModelLayer.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.pdb
+/Users/swapnilgupta/Projects/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ref/ModelLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/bin/Debug/net6.0/ModelLayer.deps.json
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/bin/Debug/net6.0/ModelLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/bin/Debug/net6.0/ModelLayer.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/obj/Debug/net6.0/refint/ModelLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ModelLayer.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/obj/Debug/net6.0/ref/ModelLayer.dll

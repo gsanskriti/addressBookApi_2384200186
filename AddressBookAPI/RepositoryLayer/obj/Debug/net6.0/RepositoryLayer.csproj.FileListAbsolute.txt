@@ -1,0 +1,32 @@
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/RepositoryLayer.deps.json
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/RepositoryLayer.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/RepositoryLayer.pdb
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/ModelLayer.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/ModelLayer.pdb
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.csproj.CopyComplete
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/refint/RepositoryLayer.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.pdb
+/Users/swapnilgupta/Projects/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/ref/RepositoryLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/RepositoryLayer.deps.json
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/RepositoryLayer.runtimeconfig.json
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/RepositoryLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/RepositoryLayer.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/ModelLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/bin/Debug/net6.0/ModelLayer.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.csproj.CopyComplete
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/refint/RepositoryLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/RepositoryLayer.genruntimeconfig.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/Debug/net6.0/ref/RepositoryLayer.dll

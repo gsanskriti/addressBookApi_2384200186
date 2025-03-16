@@ -1,0 +1,290 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/AddressBookAPI.csproj": {}
+  },
+  "projects": {
+    "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/AddressBookAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/AddressBookAPI.csproj",
+        "projectName": "AddressBookAPI",
+        "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/AddressBookAPI.csproj",
+        "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
+        "outputPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/BusinessLayer.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/BusinessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.428/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/BusinessLayer.csproj",
+        "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
+        "outputPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/ModelLayer.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/ModelLayer.csproj"
+              },
+              "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/RepositoryLayer.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/RepositoryLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.428/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/ModelLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/ModelLayer.csproj",
+        "projectName": "ModelLayer",
+        "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/ModelLayer.csproj",
+        "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
+        "outputPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.428/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/RepositoryLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/RepositoryLayer.csproj",
+        "projectName": "RepositoryLayer",
+        "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/RepositoryLayer.csproj",
+        "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
+        "outputPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/ModelLayer.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/ModelLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.428/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

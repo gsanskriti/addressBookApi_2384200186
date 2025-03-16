@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{8D67162B-E76D-4AC6-AEF8-BDF6DF28225B}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BusinessLayer FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.AddressBookAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/Context/AppDbContextFactory.cs" relfile="RepositoryLayer/Context/AppDbContextFactory.cs" line="9" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="RepositoryLayer/Context/AppDbContextFactory.cs">
+    <Files>
+      <File FileName="AddressBookAPI/Controllers/AddressBookController.cs" />
+      <File FileName="RepositoryLayer/Entity/AddressBookEntry.cs" />
+      <File FileName="RepositoryLayer/Entity/user.cs" />
+      <File FileName="RepositoryLayer/Context/AppDbContext.cs" />
+      <File FileName="AddressBookAPI/appsettings.json" />
+      <File FileName="RepositoryLayer/Context/AppDbContextFactory.cs" Line="19" Column="1" />
+      <File FileName="AddressBookAPI/Program.cs" />
+      <File FileName="AddressBookAPI/Properties/launchSettings.json" />
+      <File FileName="AddressBookAPI/NLog.config" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AddressBookAPI" expanded="True">
+            <Node name="AddressBookAPI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="RepositoryLayer" expanded="True">
+              <Node name="Context" expanded="True">
+                <Node name="AppDbContextFactory.cs" selected="True" />
+              </Node>
+              <Node name="Entity" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>

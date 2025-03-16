@@ -1,0 +1,98 @@
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/appsettings.Development.json
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/appsettings.json
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/AddressBookAPI
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/AddressBookAPI.deps.json
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/AddressBookAPI.runtimeconfig.json
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/AddressBookAPI.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/AddressBookAPI.pdb
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.AssemblyInfo.cs
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.MvcApplicationPartsAssemblyInfo.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/staticwebassets.build.json
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/staticwebassets.development.json
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/scopedcss/bundle/AddressBookAPI.styles.css
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/refint/AddressBookAPI.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.pdb
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.genruntimeconfig.cache
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/ref/AddressBookAPI.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/BusinessLayer.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/ModelLayer.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/RepositoryLayer.dll
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/BusinessLayer.pdb
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/ModelLayer.pdb
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/RepositoryLayer.pdb
+/Users/swapnilgupta/Projects/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.csproj.CopyComplete
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/appsettings.Development.json
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/appsettings.json
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/AddressBookAPI
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/AddressBookAPI.deps.json
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/AddressBookAPI.runtimeconfig.json
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/AddressBookAPI.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/AddressBookAPI.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/System.Collections.Immutable.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/System.Drawing.Common.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/System.Runtime.Caching.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/System.Windows.Extensions.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/BusinessLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/ModelLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/RepositoryLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/BusinessLayer.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/ModelLayer.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/RepositoryLayer.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.MvcApplicationPartsAssemblyInfo.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/staticwebassets.build.json
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/staticwebassets.development.json
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/scopedcss/bundle/AddressBookAPI.styles.css
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.csproj.CopyComplete
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/refint/AddressBookAPI.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/AddressBookAPI.genruntimeconfig.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/obj/Debug/net6.0/ref/AddressBookAPI.dll
