@@ -15,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container
 builder.Services.AddControllers();
 
-// Register DbContext with SQL Server
+// Register DbContext with SQL Server 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer("Server=localhost;Database=AddressBook;User Id=sa;Password=Sanskiriti_3009;TrustServerCertificate=True;"));
 
