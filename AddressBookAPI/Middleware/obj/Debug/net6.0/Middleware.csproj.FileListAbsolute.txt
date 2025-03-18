@@ -1,0 +1,12 @@
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/bin/Debug/net6.0/Middleware.deps.json
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/bin/Debug/net6.0/Middleware.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/bin/Debug/net6.0/Middleware.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/obj/Debug/net6.0/Middleware.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/obj/Debug/net6.0/Middleware.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/obj/Debug/net6.0/Middleware.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/obj/Debug/net6.0/Middleware.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/obj/Debug/net6.0/Middleware.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/obj/Debug/net6.0/Middleware.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/obj/Debug/net6.0/refint/Middleware.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/obj/Debug/net6.0/Middleware.pdb
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/obj/Debug/net6.0/ref/Middleware.dll

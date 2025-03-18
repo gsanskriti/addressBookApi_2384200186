@@ -1,36 +1,45 @@
 ﻿<Properties StartupConfiguration="{8D67162B-E76D-4AC6-AEF8-BDF6DF28225B}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AddressBookAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="AddressBookAPI/Program.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RepositoryLayer/Service/UserRL.cs">
     <Files>
-      <File FileName="AddressBookAPI/Controllers/AddressBookController.cs" Line="15" Column="1" />
-      <File FileName="RepositoryLayer/Entity/AddressBookEntry.cs" Line="7" Column="2" />
-      <File FileName="RepositoryLayer/Entity/user.cs" Line="1" Column="1" />
-      <File FileName="RepositoryLayer/Context/AppDbContext.cs" />
-      <File FileName="AddressBookAPI/appsettings.json" Line="14" Column="1" />
-      <File FileName="RepositoryLayer/Context/AppDbContextFactory.cs" Line="20" Column="1" />
-      <File FileName="AddressBookAPI/Program.cs" Line="11" Column="31" />
-      <File FileName="AddressBookAPI/Properties/launchSettings.json" />
-      <File FileName="AddressBookAPI/NLog.config" />
-      <File FileName="ModelLayer/model/ResponseModel.cs" Line="14" Column="1" />
-      <File FileName="ModelLayer/model/RequestModel.cs" Line="13" Column="1" />
-      <File FileName="ModelLayer/model/ResponseBody.cs" Line="12" Column="1" />
-      <File FileName="BusinessLayer/mapping/AddressBookProfile.cs" Line="15" Column="1" />
+      <File FileName="AddressBookAPI/Controllers/AddressBookController.cs" Line="16" Column="10" />
+      <File FileName="Middleware/Authenticator/JwtTokenService.cs" Line="10" Column="87" />
+      <File FileName="AddressBookAPI/appsettings.json" Line="14" Column="60" />
+      <File FileName="AddressBookAPI/Program.cs" Line="1" Column="1" />
+      <File FileName="BusinessLayer/Interface/IUserBL.cs" Line="1" Column="1" />
+      <File FileName="BusinessLayer/Interface/IAddressBL.cs" Line="1" Column="1" />
+      <File FileName="BusinessLayer/mapping/AddressBookProfile.cs" Line="1" Column="1" />
+      <File FileName="BusinessLayer/Service/AddressBL.cs" Line="1" Column="1" />
+      <File FileName="BusinessLayer/Service/UserBL.cs" Line="1" Column="1" />
       <File FileName="BusinessLayer/Validators/RequestModelValidator.cs" Line="1" Column="1" />
-      <File FileName="RepositoryLayer/Service/AddressRL.cs" Line="7" Column="1" />
-      <File FileName=".editorconfig" Line="1" Column="1" />
-      <File FileName="BusinessLayer/Interface/IAddressBL.cs" Line="9" Column="1" />
-      <File FileName="BusinessLayer/Service/AddressBL.cs" Line="10" Column="2" />
+      <File FileName="Middleware/salting/PasswordHelper.cs" Line="14" Column="1" />
+      <File FileName="ModelLayer/DTOs/UserDTO.cs" Line="7" Column="50" />
+      <File FileName="ModelLayer/DTOs/UserLoginDTO.cs" Line="1" Column="1" />
+      <File FileName="ModelLayer/DTOs/UserRegisterDTO.cs" Line="1" Column="1" />
+      <File FileName="ModelLayer/model/RequestModel.cs" Line="1" Column="1" />
+      <File FileName="ModelLayer/model/ResponseBody.cs" Line="1" Column="1" />
+      <File FileName="ModelLayer/model/ResponseModel.cs" Line="14" Column="1" />
+      <File FileName="RepositoryLayer/Service/AddressRL.cs" Line="24" Column="1" />
+      <File FileName="RepositoryLayer/Service/UserRL.cs" Line="30" Column="1" />
+      <File FileName="RepositoryLayer/Interface/IUserRL.cs" Line="13" Column="1" />
+      <File FileName="RepositoryLayer/Entity/user.cs" Line="30" Column="1" />
+      <File FileName="RepositoryLayer/Entity/AddressBookEntry.cs" Line="33" Column="1" />
+      <File FileName="RepositoryLayer/Interface/IAddressRL.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AddressBookAPI" expanded="True">
             <Node name="AddressBookAPI" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Controllers" expanded="True" />
             </Node>
             <Node name="BusinessLayer" expanded="True">
@@ -40,19 +49,24 @@
               <Node name="Service" expanded="True" />
               <Node name="Validators" expanded="True" />
             </Node>
+            <Node name="Middleware" expanded="True">
+              <Node name="Authenticator" expanded="True" />
+              <Node name="salting" expanded="True" />
+            </Node>
             <Node name="ModelLayer" expanded="True">
+              <Node name="DTOs" expanded="True" />
               <Node name="model" expanded="True" />
             </Node>
-            <Node name="RepositoryLayer" expanded="True">
+            <Node name="RepositoryLayer">
               <Node name="Entity" expanded="True" />
               <Node name="Interface" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-              <Node name="Service" expanded="True" />
+              <Node name="Service" expanded="True">
+                <Node name="UserRL.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.AddressBookAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

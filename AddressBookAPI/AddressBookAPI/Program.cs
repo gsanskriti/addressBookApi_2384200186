@@ -1,40 +1,97 @@
-﻿using BusinessLayer.Interface;
-using BusinessLayer.mapping;
-using BusinessLayer.Service;
-using BusinessLayer.Validators;
-using FluentValidation;
-using FluentValidation.AspNetCore;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ModelLayer.model;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Service;
+using BusinessLayer.Interface;
+using BusinessLayer.Service;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
+// Connection String
+var connectionString = "Server=localhost;Database=AddressBook;User Id=sa;Password=Sanskriti_3009;TrustServerCertificate=True;";
+
+// Add Database Context
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString));
+
+// Add Controllers
 builder.Services.AddControllers();
 
-// Register DbContext with SQL Server 
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer("Server=localhost;Database=AddressBook;User Id=sa;Password=Sanskiriti_3009;TrustServerCertificate=True;"));
+// Configure Swagger (API Documentation)
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "AddressBookAPI", Version = "v1" });
 
-// Register AutoMapper
-builder.Services.AddAutoMapper(typeof(AddressBookProfile));
+    // Enable JWT Authentication in Swagger
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\"",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer"
+    });
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
 
-// Register FluentValidation
-builder.Services.AddValidatorsFromAssemblyContaining<RequestModelValidator>();
-builder.Services.AddFluentValidationAutoValidation();
+//  Configure JWT Authentication
+var jwtSecret = builder.Configuration["Jwt:Secret"] ?? throw new ArgumentNullException("Jwt:Secret is missing in appsettings.json");
+var key = Encoding.UTF8.GetBytes(jwtSecret);
 
-// Register Business & Repository Layer Services
-builder.Services.AddScoped<IAddressBL, AddressBL>();
-builder.Services.AddScoped<IAddressRL, AddressRL>();
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ClockSkew = TimeSpan.Zero // Immediate token expiration handling
+        };
+    });
 
+// Register Dependency Injection (DI)
+builder.Services.AddScoped<IUserBL, UserBL>();
+builder.Services.AddScoped<IUserRL, UserRL>();
+
+// Build the App
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.MapControllers();
+// Use Exception Middleware
+app.UseMiddleware<ExceptionMiddleware>();
 
+// Enable Swagger UI
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+// Enable Authentication & Authorization
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapControllers();
 app.Run();

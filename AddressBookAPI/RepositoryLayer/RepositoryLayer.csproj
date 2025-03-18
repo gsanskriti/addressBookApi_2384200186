@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ModelLayer\ModelLayer.csproj" />
+    <ProjectReference Include="..\Middleware\Middleware.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.36" />

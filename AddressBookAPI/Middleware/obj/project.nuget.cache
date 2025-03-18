@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "9dCuJuiRnGteG+lUQgljcVkth0DKJ1dUfiVQqVP2wG9xW6qKg3ffSqyZfneoHG3JH3S1OpnUvTcuKYLqNVkZOA==",
+  "success": true,
+  "projectFilePath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/Middleware.csproj",
+  "expectedPackageFiles": [
+    "/Users/swapnilgupta/.nuget/packages/bcrypt.net-next/4.0.0/bcrypt.net-next.4.0.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.0/microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.10.0/microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/microsoft.identitymodel.logging/6.10.0/microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/microsoft.identitymodel.protocols/6.10.0/microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.10.0/microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/microsoft.identitymodel.tokens/6.10.0/microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/system.identitymodel.tokens.jwt/6.10.0/system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
