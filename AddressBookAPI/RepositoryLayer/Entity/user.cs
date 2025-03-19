@@ -20,5 +20,9 @@ namespace RepositoryLayer.Entity
         public string PasswordHash { get; set; } = string.Empty;
 
         public virtual ICollection<AddressBookEntry> AddressBookEntries { get; set; } = new List<AddressBookEntry>();
+
+        // For password reset
+        public string? ResetToken { get; set; }
+        public DateTime? ResetTokenExpires { get; set; }
     }
 }

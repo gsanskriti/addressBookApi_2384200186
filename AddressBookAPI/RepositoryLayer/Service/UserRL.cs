@@ -2,16 +2,18 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using RepositoryLayer.Context;
+using RepositoryLayer.Entity;
 using RepositoryLayer.Interface;
 using ModelLayer.DTOs;
-using ModelLayer.model;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using BCrypt.Net;
-using RepositoryLayer.Entity;
+using System.Linq;
+using System.Net.Mail;
+using System.Net;
 
 namespace RepositoryLayer.Service
 {
@@ -19,28 +21,23 @@ namespace RepositoryLayer.Service
     {
         private readonly AppDbContext _context;
         private readonly IConfiguration _configuration;
-        private readonly string _jwtSecret;
 
         public UserRL(AppDbContext context, IConfiguration configuration)
         {
             _context = context;
             _configuration = configuration;
-            _jwtSecret = _configuration["Jwt:Secret"] ?? throw new ArgumentNullException(nameof(_jwtSecret), "Jwt:Secret is missing in appsettings.json");
-
         }
 
         public async Task<User> Register(UserRegisterDTO userDto)
         {
-            // Hash the password before storing
             string hashedPassword = BCrypt.Net.BCrypt.HashPassword(userDto.Password);
 
             var user = new User
             {
-                FullName = userDto.FullName, 
+                FullName = userDto.FullName,
                 Email = userDto.Email,
                 PasswordHash = hashedPassword
             };
-
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
@@ -50,21 +47,16 @@ namespace RepositoryLayer.Service
         public async Task<User> Authenticate(UserLoginDTO userDto)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == userDto.Email);
-            if (user == null)
-                throw new UnauthorizedAccessException("Invalid email or password");
-
-            bool isPasswordValid = BCrypt.Net.BCrypt.Verify(userDto.Password, user.PasswordHash);
-            if (!isPasswordValid)
+            if (user == null || !BCrypt.Net.BCrypt.Verify(userDto.Password, user.PasswordHash))
                 throw new UnauthorizedAccessException("Invalid email or password");
 
             return user;
         }
 
-
         public string GenerateJwtToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.UTF8.GetBytes(_jwtSecret);
+            var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Secret"]);
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -82,6 +74,60 @@ namespace RepositoryLayer.Service
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
+        }
+
+        public async Task<bool> ForgotPasswordAsync(string email)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+            if (user == null) return false;
+
+            // Generate reset token
+            user.ResetToken = Guid.NewGuid().ToString();
+            user.ResetTokenExpires = DateTime.UtcNow.AddHours(1);
+
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+
+            // Send Email
+            await SendEmailAsync(email, "Password Reset", $"Your reset token: {user.ResetToken}");
+
+            return true;
+        }
+
+        public async Task<bool> ResetPasswordAsync(string email, string token, string newPassword)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email && u.ResetToken == token);
+            if (user == null || user.ResetTokenExpires < DateTime.UtcNow)
+                return false;
+
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(newPassword);
+            user.ResetToken = null;
+            user.ResetTokenExpires = null;
+
+            _context.Users.Update(user);
+            return await _context.SaveChangesAsync() > 0;
+        }
+
+        private async Task SendEmailAsync(string toEmail, string subject, string body)
+        {
+            var smtpSettings = _configuration.GetSection("SMTP");
+            var smtpClient = new SmtpClient(smtpSettings["Host"])
+            {
+                Port = int.Parse(smtpSettings["Port"]),
+                Credentials = new NetworkCredential(smtpSettings["Username"], smtpSettings["Password"]),
+                EnableSsl = true
+            };
+
+            var message = new MailMessage
+            {
+                From = new MailAddress(smtpSettings["Sender"]),
+                Subject = subject,
+                Body = body,
+                IsBodyHtml = true
+            };
+
+            message.To.Add(toEmail);
+            await smtpClient.SendMailAsync(message);
         }
     }
 }

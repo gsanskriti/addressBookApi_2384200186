@@ -40,6 +40,7 @@
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/FluentValidation.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/FluentValidation.AspNetCore.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/MailKit.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
@@ -64,7 +65,9 @@
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.OpenApi.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/MimeKit.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/NLog.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/BouncyCastle.Crypto.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Serilog.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Serilog.AspNetCore.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Serilog.Extensions.Hosting.dll

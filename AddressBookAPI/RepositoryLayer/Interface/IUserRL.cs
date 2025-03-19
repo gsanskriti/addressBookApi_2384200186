@@ -9,5 +9,7 @@ namespace RepositoryLayer.Interface
         Task<User> Register(UserRegisterDTO userDto);
         Task<User> Authenticate(UserLoginDTO userDto);
         string GenerateJwtToken(User user);
+        Task<bool> ForgotPasswordAsync(string email);
+        Task<bool> ResetPasswordAsync(string email, string token, string newPassword);
     }
 }

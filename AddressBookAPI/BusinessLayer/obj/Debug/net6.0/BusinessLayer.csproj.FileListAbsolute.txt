@@ -15,6 +15,11 @@
 /Users/swapnilgupta/Projects/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/refint/BusinessLayer.dll
 /Users/swapnilgupta/Projects/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.pdb
 /Users/swapnilgupta/Projects/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/ref/BusinessLayer.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.csproj.CoreCompileInputs.cache
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/bin/Debug/net6.0/BusinessLayer.deps.json
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/bin/Debug/net6.0/BusinessLayer.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/bin/Debug/net6.0/BusinessLayer.pdb
@@ -24,11 +29,6 @@
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/bin/Debug/net6.0/ModelLayer.pdb
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/bin/Debug/net6.0/RepositoryLayer.pdb
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/bin/Debug/net6.0/Middleware.pdb
-/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.csproj.AssemblyReference.cache
-/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
-/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.AssemblyInfoInputs.cache
-/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.AssemblyInfo.cs
-/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.csproj.CoreCompileInputs.cache
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.csproj.CopyComplete
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/BusinessLayer.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/obj/Debug/net6.0/refint/BusinessLayer.dll

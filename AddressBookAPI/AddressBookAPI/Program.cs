@@ -14,6 +14,11 @@ using RepositoryLayer.Service;
 using BusinessLayer.Interface;
 using BusinessLayer.Service;
 using System.Text;
+using AddressBookAPI.BusinessLayer.Interface;
+using AddressBookAPI.BusinessLayer.Service;
+using AddressBookAPI.RepositoryLayer.Interface;
+using AddressBookAPI.RepositoryLayer.Service;
+using AddressBookAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,7 +59,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 //  Configure JWT Authentication
-var jwtSecret = builder.Configuration["Jwt:Secret"] ?? throw new ArgumentNullException("Jwt:Secret is missing in appsettings.json");
+var jwtSecret = "Rp7vkNchIefMfVbKShT2KZnZ6PlSTyEjnIvrijmn27s=";
 var key = Encoding.UTF8.GetBytes(jwtSecret);
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -75,6 +80,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 // Register Dependency Injection (DI)
 builder.Services.AddScoped<IUserBL, UserBL>();
 builder.Services.AddScoped<IUserRL, UserRL>();
+
+// Register Services
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+
 
 // Build the App
 var app = builder.Build();

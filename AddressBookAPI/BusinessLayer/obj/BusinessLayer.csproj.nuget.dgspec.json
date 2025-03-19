@@ -26,6 +26,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/Middleware.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/Middleware.csproj"
+              },
               "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/ModelLayer.csproj": {
                 "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/ModelLayer/ModelLayer.csproj"
               },
@@ -56,6 +59,14 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.3.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.30.0, )"
             }
           },
           "imports": [
