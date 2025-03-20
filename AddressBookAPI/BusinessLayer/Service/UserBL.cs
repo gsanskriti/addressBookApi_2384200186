@@ -1,7 +1,6 @@
 ﻿using BusinessLayer.Interface;
 using ModelLayer.DTOs;
 using RepositoryLayer.Interface;
-using RepositoryLayer.Entity;
 using System.Threading.Tasks;
 
 namespace BusinessLayer.Service
@@ -27,6 +26,16 @@ namespace BusinessLayer.Service
             if (user == null) return null;
 
             return _userRL.GenerateJwtToken(user);
+        }
+
+        public async Task<bool> ForgotPassword(string email)
+        {
+            return await _userRL.ForgotPasswordAsync(email);
+        }
+
+        public async Task<bool> ResetPassword(string email, string token, string newPassword)
+        {
+            return await _userRL.ResetPasswordAsync(email, token, newPassword);
         }
     }
 }

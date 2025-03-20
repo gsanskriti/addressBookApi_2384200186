@@ -28,6 +28,9 @@
             "projectReferences": {
               "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/BusinessLayer.csproj": {
                 "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/BusinessLayer.csproj"
+              },
+              "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/Middleware.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/Middleware.csproj"
               }
             }
           }

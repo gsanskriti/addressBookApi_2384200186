@@ -1,5 +1,6 @@
 ﻿using AddressBookAPI.BusinessLayer.Interface;
 using AddressBookAPI.Models.DTOs;
+using BusinessLayer.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.DTOs;
 using System.Threading.Tasks;
@@ -8,11 +9,11 @@ using System.Threading.Tasks;
 [ApiController]
 public class AuthController : ControllerBase
 {
-    private readonly IAuthService _authService;
+    private readonly IUserBL _userBL;
 
-    public AuthController(IAuthService authService)
+    public AuthController(IUserBL userBL)
     {
-        _authService = authService;
+        _userBL = userBL;
     }
 
     /// <summary>
@@ -23,11 +24,10 @@ public class AuthController : ControllerBase
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] UserRegisterDTO model)
     {
-        var result = await _authService.RegisterAsync(model);
-        if (!result) return BadRequest("User already exists!");
+        var result = await _userBL.RegisterUser(model);
+
         return Ok("User registered successfully!");
     }
-
 
     /// <summary>
     /// LOGIN USER
@@ -37,35 +37,33 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] UserLoginDTO model)
     {
-        var token = await _authService.LoginAsync(model);
+        var token = await _userBL.LoginUser(model);
         if (token == null) return Unauthorized("Invalid credentials!");
         return Ok(new { Token = token });
     }
 
-
     /// <summary>
-    /// user can get forget password option 
+    /// User can request a password reset link
     /// </summary>
     /// <param name="model"></param>
     /// <returns></returns>
     [HttpPost("forgot-password")]
     public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordDto model)
     {
-        var result = await _authService.ForgotPasswordAsync(model);
+        var result = await _userBL.ForgotPassword(model.Email);
         if (!result) return BadRequest("Email not found!");
         return Ok("Password reset email sent.");
     }
 
-
     /// <summary>
-    /// user can reset its password
+    /// User can reset their password using the reset token
     /// </summary>
     /// <param name="model"></param>
     /// <returns></returns>
     [HttpPost("reset-password")]
     public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDto model)
     {
-        var result = await _authService.ResetPasswordAsync(model);
+        var result = await _userBL.ResetPassword(model.Email, model.Token, model.NewPassword);
         if (!result) return BadRequest("Invalid token or expired!");
         return Ok("Password reset successful.");
     }

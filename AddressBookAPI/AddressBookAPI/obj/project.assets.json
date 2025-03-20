@@ -3665,6 +3665,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.36",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.36",
+      "Middleware >= 1.0.0",
       "NLog >= 5.4.0",
       "Serilog >= 4.2.0",
       "Serilog.AspNetCore >= 6.0.0",
@@ -3702,6 +3703,9 @@
           "projectReferences": {
             "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/BusinessLayer.csproj": {
               "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/BusinessLayer/BusinessLayer.csproj"
+            },
+            "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/Middleware.csproj": {
+              "projectPath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/Middleware/Middleware.csproj"
             }
           }
         }

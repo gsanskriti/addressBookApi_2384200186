@@ -10,6 +10,9 @@
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\Middleware\Middleware.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">

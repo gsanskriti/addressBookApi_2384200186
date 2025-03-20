@@ -4,6 +4,6 @@ namespace AddressBookAPI.Middleware
 {
     public interface IEmailService
     {
-        Task SendEmailAsync(string to, string subject, string body);
+        void SendEmail(string toEmail, string subject, string body);
     }
 }

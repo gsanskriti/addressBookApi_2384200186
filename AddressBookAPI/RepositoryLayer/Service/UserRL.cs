@@ -30,19 +30,27 @@ namespace RepositoryLayer.Service
 
         public async Task<User> Register(UserRegisterDTO userDto)
         {
-            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(userDto.Password);
-
-            var user = new User
+            try
             {
-                FullName = userDto.FullName,
-                Email = userDto.Email,
-                PasswordHash = hashedPassword
-            };
+                string hashedPassword = BCrypt.Net.BCrypt.HashPassword(userDto.Password);
 
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-            return user;
+                var user = new User
+                {
+                    FullName = userDto.FullName,
+                    Email = userDto.Email,
+                    PasswordHash = hashedPassword
+                };
+
+                _context.Users.Add(user);
+                await _context.SaveChangesAsync();
+                return user;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error: {ex.InnerException?.Message ?? ex.Message}");
+            }
         }
+
 
         public async Task<User> Authenticate(UserLoginDTO userDto)
         {
@@ -108,26 +116,39 @@ namespace RepositoryLayer.Service
             return await _context.SaveChangesAsync() > 0;
         }
 
+
         private async Task SendEmailAsync(string toEmail, string subject, string body)
         {
-            var smtpSettings = _configuration.GetSection("SMTP");
-            var smtpClient = new SmtpClient(smtpSettings["Host"])
+            var smtpSettings = _configuration.GetSection("EmailSettings");
+
+            using var smtpClient = new SmtpClient(smtpSettings["SmtpServer"], int.Parse(smtpSettings["SmtpPort"]))
             {
-                Port = int.Parse(smtpSettings["Port"]),
-                Credentials = new NetworkCredential(smtpSettings["Username"], smtpSettings["Password"]),
-                EnableSsl = true
+                Credentials = new NetworkCredential(smtpSettings["SmtpUser"], smtpSettings["SmtpPass"]),
+                EnableSsl = true,
+                UseDefaultCredentials = false // Ensure only provided credentials are used
             };
 
-            var message = new MailMessage
+            using var message = new MailMessage
             {
-                From = new MailAddress(smtpSettings["Sender"]),
+                From = new MailAddress(smtpSettings["FromEmail"]),
                 Subject = subject,
                 Body = body,
                 IsBodyHtml = true
             };
 
             message.To.Add(toEmail);
-            await smtpClient.SendMailAsync(message);
+
+            try
+            {
+                await smtpClient.SendMailAsync(message);
+            }
+            catch (SmtpException ex)
+            {
+                throw new Exception($"SMTP Error: {ex.Message}");
+            }
         }
+
+
+
     }
 }

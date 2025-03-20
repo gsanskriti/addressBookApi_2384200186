@@ -15,39 +15,32 @@ namespace AddressBookAPI.Middleware
             _configuration = configuration;
         }
 
-        public async Task SendEmailAsync(string to, string subject, string body)
+        public void SendEmail(string toEmail, string subject, string body)
         {
-            var smtpServer = _configuration["EmailSettings:SmtpServer"];
-            var smtpPort = int.Parse(_configuration["EmailSettings:SmtpPort"]);
-            var smtpUser = _configuration["EmailSettings:SmtpUser"];
-            var smtpPass = _configuration["EmailSettings:SmtpPass"];
-            var fromEmail = _configuration["EmailSettings:FromEmail"];
-
-            var client = new SmtpClient(smtpServer)
-            {
-                Port = smtpPort,
-                Credentials = new NetworkCredential(smtpUser, smtpPass),
-                EnableSsl = true
-            };
-
-            var mailMessage = new MailMessage
-            {
-                From = new MailAddress(fromEmail),
-                Subject = subject,
-                Body = body,
-                IsBodyHtml = true
-            };
-
-            mailMessage.To.Add(to);
-
             try
             {
-                await client.SendMailAsync(mailMessage);
+                using (MailMessage mail = new MailMessage())
+                {
+                    mail.To.Add(toEmail);
+                    mail.From = new MailAddress(_configuration["EmailSettings:FromEmail"]);
+                    mail.Subject = subject;
+                    mail.Body = body;
+                    mail.IsBodyHtml = true;
+
+                    using (SmtpClient smtp = new SmtpClient(_configuration["EmailSettings:SmtpServer"], int.Parse(_configuration["EmailSettings:Port"])))
+                    {
+                        smtp.Credentials = new NetworkCredential(
+                            _configuration["EmailSettings:FromEmail"],
+                            _configuration["EmailSettings:SmtpPass"]
+                        );
+                        smtp.EnableSsl = bool.Parse(_configuration["EmailSettings:EnableSSL"]);
+                        smtp.Send(mail);
+                    }
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Email sending failed: {ex.Message}");
-                throw;
+                Console.WriteLine($"[EmailService] Error: {ex.Message}");
             }
         }
     }
