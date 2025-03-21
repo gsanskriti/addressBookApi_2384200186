@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VtYt+LMQkyaughvLiGQHK7iV1MySBGhu9c0PI8bERfwcrndVtTV8DmNnMOKt8VuxDpjvdOwJEKZ68VlxChvodA==",
+  "dgSpecHash": "6qC+4wZ6Y5aNG7VusmQUCoBwHsR6nm0T5+dqqnUkUyObtd4ZSGq4/5G+f08DZ8UWEHhokSw8Pklswakg9a4kAQ==",
   "success": true,
   "projectFilePath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/RepositoryLayer/RepositoryLayer.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,7 @@
     "/Users/swapnilgupta/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/rabbitmq.client/6.0.0/rabbitmq.client.6.0.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/stackexchange.redis/2.8.31/stackexchange.redis.2.8.31.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.collections.immutable/6.0.1/system.collections.immutable.6.0.1.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.configuration.configurationmanager/4.7.0/system.configuration.configurationmanager.4.7.0.nupkg.sha512",
@@ -49,6 +50,7 @@
     "/Users/swapnilgupta/.nuget/packages/system.drawing.common/4.7.0/system.drawing.common.4.7.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.identitymodel.tokens.jwt/6.10.0/system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.runtime.caching/4.7.0/system.runtime.caching.4.7.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.security.accesscontrol/4.7.0/system.security.accesscontrol.4.7.0.nupkg.sha512",

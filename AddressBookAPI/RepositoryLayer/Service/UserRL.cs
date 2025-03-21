@@ -24,13 +24,16 @@ namespace RepositoryLayer.Service
         private readonly AppDbContext _context;
         private readonly IConfiguration _configuration;
         private readonly IRedisCacheService _redisCacheService;
+        private readonly IRabbitMQService _rabbitMQService;
 
 
-        public UserRL(AppDbContext context, IConfiguration configuration, IRedisCacheService redisCacheService)
+
+        public UserRL(AppDbContext context, IConfiguration configuration, IRedisCacheService redisCacheService, IRabbitMQService rabbitMQService)
         {
             _context = context;
             _configuration = configuration;
             _redisCacheService = redisCacheService;
+            _rabbitMQService = rabbitMQService;
         }
 
         //Register User & Invalidate Cache
@@ -50,6 +53,9 @@ namespace RepositoryLayer.Service
                 _context.Users.Add(user);
                 await _context.SaveChangesAsync();
                 await _redisCacheService.RemoveCacheValueAsync("AddressBook_Users");
+
+                string message = $"New user registered: {user.Email}";
+                _rabbitMQService.PublishMessage("UserRegisteredQueue", message);
 
                 return user;
             }
@@ -112,6 +118,7 @@ namespace RepositoryLayer.Service
 
             // Invalidate cache
             await _redisCacheService.RemoveCacheValueAsync("AddressBook_Users");
+
             return true;
         }
 

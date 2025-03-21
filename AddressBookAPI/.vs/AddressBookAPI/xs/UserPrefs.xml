@@ -1,28 +1,28 @@
 ﻿<Properties StartupConfiguration="{8D67162B-E76D-4AC6-AEF8-BDF6DF28225B}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AddressBookAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="RepositoryLayer/Service/UserRL.cs">
     <Files>
-      <File FileName="AddressBookAPI/appsettings.json" Line="27" Column="1" />
-      <File FileName="RepositoryLayer/Service/UserRL.cs" Line="23" Column="56" />
+      <File FileName="RepositoryLayer/Service/UserRL.cs" Line="90" Column="60" IsPinned="True" />
+      <File FileName="RepositoryLayer/Service/RabbitMQService.cs" Line="26" Column="10" />
+      <File FileName="RepositoryLayer/Service/RabbitMQConsumerService.cs" Line="29" Column="46" />
+      <File FileName="AddressBookAPI/Program.cs" Line="30" Column="33" />
+      <File FileName="AddressBookAPI/appsettings.json" Line="27" Column="6" />
+      <File FileName="BusinessLayer/Service/AuthService.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AddressBookAPI" expanded="True">
-            <Node name="AddressBookAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
-            </Node>
-            <Node name="Middleware" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Authenticator" expanded="True" />
+            <Node name="AddressBookAPI" expanded="True" />
+            <Node name="BusinessLayer" expanded="True">
+              <Node name="Interface" expanded="True" />
+              <Node name="Service" expanded="True" />
             </Node>
             <Node name="RepositoryLayer" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Entity" expanded="True" />
+              <Node name="Interface" expanded="True" />
               <Node name="Service" expanded="True">
                 <Node name="UserRL.cs" selected="True" />
               </Node>
@@ -30,14 +30,9 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.AddressBookAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

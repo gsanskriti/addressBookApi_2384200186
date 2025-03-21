@@ -14,6 +14,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36",
           "Middleware": "1.0.0",
           "NLog": "5.4.0",
+          "RabbitMQ.Client": "6.0.0",
           "Serilog": "4.2.0",
           "Serilog.AspNetCore": "6.0.0",
           "Serilog.Sinks.Console": "6.0.0",
@@ -536,6 +537,17 @@
           }
         }
       },
+      "RabbitMQ.Client/6.0.0": {
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
+      },
       "Serilog/4.2.0": {
         "runtime": {
           "lib/net6.0/Serilog.dll": {
@@ -765,6 +777,7 @@
         }
       },
       "System.IO.Pipelines/6.0.0": {},
+      "System.Memory/4.5.4": {},
       "System.Runtime.Caching/4.7.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "4.7.0"
@@ -901,6 +914,7 @@
           "Microsoft.Extensions.Logging": "6.0.1",
           "Middleware": "1.0.0",
           "ModelLayer": "1.0.0",
+          "RabbitMQ.Client": "6.0.0",
           "StackExchange.Redis": "2.8.31"
         },
         "runtime": {
@@ -1272,6 +1286,13 @@
       "path": "portable.bouncycastle/1.9.0",
       "hashPath": "portable.bouncycastle.1.9.0.nupkg.sha512"
     },
+    "RabbitMQ.Client/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8e7KK44Fai72F452GF8KxUAW5t+ik3rUcalpQaxQNv6DxZyQTgVioWfyYSGYF6qpUqDdy7ZmvD3Zgkm7pKNR9w==",
+      "path": "rabbitmq.client/6.0.0",
+      "hashPath": "rabbitmq.client.6.0.0.nupkg.sha512"
+    },
     "Serilog/4.2.0": {
       "type": "package",
       "serviceable": true,
@@ -1418,6 +1439,13 @@
       "sha512": "sha512-mXX66shZ4xLlI3vNLaJ0lt8OIZdmXTvIqXRdQX5HLVGSkLhINLsVhyZuX2UdRFnOGkqnwmMUs40pIIQ7mna4+A==",
       "path": "system.io.pipelines/6.0.0",
       "hashPath": "system.io.pipelines.6.0.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
     },
     "System.Runtime.Caching/4.7.0": {
       "type": "package",

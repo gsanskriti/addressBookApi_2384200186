@@ -69,6 +69,7 @@
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/NLog.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/BouncyCastle.Crypto.dll
+/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/RabbitMQ.Client.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Serilog.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Serilog.AspNetCore.dll
 /Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/bin/Debug/net6.0/Serilog.Extensions.Hosting.dll

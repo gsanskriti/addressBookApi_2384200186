@@ -20,14 +20,21 @@ using AddressBookAPI.RepositoryLayer.Interface;
 using AddressBookAPI.RepositoryLayer.Service;
 using AddressBookAPI.Middleware;
 using StackExchange.Redis;
-
+ 
 var builder = WebApplication.CreateBuilder(args);
 
 // Register Redis
 builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
 {
-    var configuration = builder.Configuration.GetConnectionString("Redis");
-    return ConnectionMultiplexer.Connect(configuration);
+    var redisSection = builder.Configuration.GetSection("Redis");
+    var connectionString = redisSection.GetValue<string>("ConnectionString");
+
+    if (string.IsNullOrEmpty(connectionString))
+    {
+        throw new InvalidOperationException("Redis configuration is missing in appsettings.json");
+    }
+
+    return ConnectionMultiplexer.Connect(connectionString);
 });
 
 
@@ -95,6 +102,11 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IRedisCacheService, RedisCacheService>();
+builder.Services.AddSingleton<IRabbitMQService, RabbitMQService>();
+builder.Services.AddHostedService<RabbitMQConsumerService>();
+builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+
+
 
 
 // Build the App

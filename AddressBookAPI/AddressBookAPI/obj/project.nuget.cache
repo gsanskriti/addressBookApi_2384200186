@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eNXUbWam5SOp86ojOxdLLsob5a0FvpocHeiKfm7WMXOi1GX6XkfGW2YaL+Pm84txKPlB9i4gdyPFnnQRL5QQIg==",
+  "dgSpecHash": "dzA2ShkN39vH0uTANxdgEa2eygraUEpAOWXNw7Gmf5iDJxTOYB1mCKgvbJVxQywSnz9mgdNhFCLLgZLFXkIUjQ==",
   "success": true,
   "projectFilePath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/AddressBookAPI.csproj",
   "expectedPackageFiles": [
@@ -55,6 +55,7 @@
     "/Users/swapnilgupta/.nuget/packages/nlog/5.4.0/nlog.5.4.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/portable.bouncycastle/1.9.0/portable.bouncycastle.1.9.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/rabbitmq.client/6.0.0/rabbitmq.client.6.0.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/serilog/4.2.0/serilog.4.2.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/serilog.aspnetcore/6.0.0/serilog.aspnetcore.6.0.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/serilog.extensions.hosting/5.0.0/serilog.extensions.hosting.5.0.0.nupkg.sha512",
@@ -76,6 +77,7 @@
     "/Users/swapnilgupta/.nuget/packages/system.formats.asn1/6.0.0/system.formats.asn1.6.0.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.identitymodel.tokens.jwt/6.36.0/system.identitymodel.tokens.jwt.6.36.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.io.pipelines/6.0.0/system.io.pipelines.6.0.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.runtime.caching/4.7.0/system.runtime.caching.4.7.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/system.security.accesscontrol/4.7.0/system.security.accesscontrol.4.7.0.nupkg.sha512",
