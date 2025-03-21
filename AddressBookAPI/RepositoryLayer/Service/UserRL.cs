@@ -14,6 +14,8 @@ using BCrypt.Net;
 using System.Linq;
 using System.Net.Mail;
 using System.Net;
+using StackExchange.Redis;
+using AddressBookAPI.RepositoryLayer.Interface;
 
 namespace RepositoryLayer.Service
 {
@@ -21,13 +23,17 @@ namespace RepositoryLayer.Service
     {
         private readonly AppDbContext _context;
         private readonly IConfiguration _configuration;
+        private readonly IRedisCacheService _redisCacheService;
 
-        public UserRL(AppDbContext context, IConfiguration configuration)
+
+        public UserRL(AppDbContext context, IConfiguration configuration, IRedisCacheService redisCacheService)
         {
             _context = context;
             _configuration = configuration;
+            _redisCacheService = redisCacheService;
         }
 
+        //Register User & Invalidate Cache
         public async Task<User> Register(UserRegisterDTO userDto)
         {
             try
@@ -43,6 +49,8 @@ namespace RepositoryLayer.Service
 
                 _context.Users.Add(user);
                 await _context.SaveChangesAsync();
+                await _redisCacheService.RemoveCacheValueAsync("AddressBook_Users");
+
                 return user;
             }
             catch (Exception ex)
@@ -52,6 +60,7 @@ namespace RepositoryLayer.Service
         }
 
 
+        //Authenticate User
         public async Task<User> Authenticate(UserLoginDTO userDto)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == userDto.Email);
@@ -61,6 +70,7 @@ namespace RepositoryLayer.Service
             return user;
         }
 
+        //Generate JWT Token
         public string GenerateJwtToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -84,6 +94,7 @@ namespace RepositoryLayer.Service
             return tokenHandler.WriteToken(token);
         }
 
+        //Forgot Password
         public async Task<bool> ForgotPasswordAsync(string email)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
@@ -99,9 +110,12 @@ namespace RepositoryLayer.Service
             // Send Email
             await SendEmailAsync(email, "Password Reset", $"Your reset token: {user.ResetToken}");
 
+            // Invalidate cache
+            await _redisCacheService.RemoveCacheValueAsync("AddressBook_Users");
             return true;
         }
 
+        //Reset Password
         public async Task<bool> ResetPasswordAsync(string email, string token, string newPassword)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email && u.ResetToken == token);
@@ -113,10 +127,15 @@ namespace RepositoryLayer.Service
             user.ResetTokenExpires = null;
 
             _context.Users.Update(user);
-            return await _context.SaveChangesAsync() > 0;
+            bool isUpdated = await _context.SaveChangesAsync() > 0;
+
+            // Invalidate cache
+            await _redisCacheService.RemoveCacheValueAsync("AddressBook_Users");
+
+            return isUpdated;
         }
 
-
+        // Send Email Utility
         private async Task SendEmailAsync(string toEmail, string subject, string body)
         {
             var smtpSettings = _configuration.GetSection("EmailSettings");
@@ -146,6 +165,36 @@ namespace RepositoryLayer.Service
             {
                 throw new Exception($"SMTP Error: {ex.Message}");
             }
+        }
+
+        // Store user session in Redis
+        public async Task StoreUserSession(string userId, string token)
+        {
+            await _redisCacheService.SetCacheValueAsync($"session_{userId}", token, TimeSpan.FromHours(1));
+        }
+
+        // Get user session from Redis
+        public async Task<string> GetUserSession(string userId)
+        {
+            return await _redisCacheService.GetCacheValueAsync<string>($"session_{userId}");
+        }
+
+        // Get All Users (Cache Enabled)
+        public async Task<List<User>> GetAllUsers()
+        {
+            string cacheKey = "AddressBook_Users";
+
+            // Check Redis cache
+            var cachedUsers = await _redisCacheService.GetCacheValueAsync<List<User>>(cacheKey);
+            if (cachedUsers != null) return cachedUsers;
+
+            // Fetch from DB if not in Redis
+            var users = await _context.Users.ToListAsync();
+
+            // Store in Redis cache for 30 minutes
+            await _redisCacheService.SetCacheValueAsync(cacheKey, users, TimeSpan.FromMinutes(30));
+
+            return users;
         }
 
 
