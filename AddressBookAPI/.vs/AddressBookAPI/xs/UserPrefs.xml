@@ -1,48 +1,10 @@
 ﻿<Properties StartupConfiguration="{8D67162B-E76D-4AC6-AEF8-BDF6DF28225B}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.AddressBookAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RepositoryLayer/Service/UserRepository.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RepositoryLayer/Service/UserRL.cs">
     <Files>
-      <File FileName="AddressBookAPI/Controllers/AddressBookController.cs" Line="92" Column="8" />
-      <File FileName="ModelLayer/DTOs/UserDTO.cs" Line="10" Column="1" />
-      <File FileName="RepositoryLayer/Service/UserRL.cs" Line="134" Column="1" />
-      <File FileName="RepositoryLayer/Entity/user.cs" Line="29" Column="1" />
-      <File FileName="ModelLayer/DTOs/UserRegisterDTO.cs" Line="11" Column="1" />
-      <File FileName="ModelLayer/DTOs/UserLoginDTO.cs" Line="1" Column="26" />
-      <File FileName="ModelLayer/model/RequestModel.cs" />
-      <File FileName="ModelLayer/model/ResponseBody.cs" />
-      <File FileName="ModelLayer/model/ResponseModel.cs" />
-      <File FileName="RepositoryLayer/Interface/IUserRL.cs" Line="16" Column="1" />
-      <File FileName="RepositoryLayer/Service/AddressRL.cs" Line="22" Column="3" />
-      <File FileName="BusinessLayer/Service/UserBL.cs" Line="33" Column="1" />
-      <File FileName="BusinessLayer/Interface/IUserBL.cs" Line="12" Column="1" />
-      <File FileName="BusinessLayer/Service/AddressBL.cs" Line="21" Column="4" />
-      <File FileName="AddressBookAPI/Program.cs" Line="92" Column="1" />
-      <File FileName="Middleware/ExceptionMiddleware.cs" />
-      <File FileName="AddressBookAPI/appsettings.json" Line="25" Column="2" />
-      <File FileName="BusinessLayer/Interface/IAddressBL.cs" Line="16" Column="1" />
-      <File FileName="BusinessLayer/mapping/AddressBookProfile.cs" />
-      <File FileName="Middleware/Authenticator/JwtTokenService.cs" />
-      <File FileName="Middleware/salting/PasswordHelper.cs" />
-      <File FileName="RepositoryLayer/Context/AppDbContext.cs" />
-      <File FileName="RepositoryLayer/Context/AppDbContextFactory.cs" />
-      <File FileName="AddressBookAPI/NLog.config" />
-      <File FileName="AddressBookAPI/AddressBookAPI.csproj" />
-      <File FileName="AddressBookAPI/Properties/launchSettings.json" />
-      <File FileName="AddressBookAPI/Controllers/AuthController.cs" Line="65" Column="13" />
-      <File FileName="ModelLayer/DTOs/ForgotPasswordDTO.cs" Line="9" Column="1" />
-      <File FileName="ModelLayer/DTOs/ResetPasswordDTO.cs" Line="12" Column="1" />
-      <File FileName="RepositoryLayer/Interface/IUserRepository.cs" Line="12" Column="1" />
-      <File FileName="RepositoryLayer/Service/UserRepository.cs" Line="11" Column="1" />
-      <File FileName="BusinessLayer/Interface/IAuthService.cs" Line="14" Column="2" />
-      <File FileName="BusinessLayer/Service/AuthService.cs" Line="14" Column="10" />
-      <File FileName="Middleware/IEmailService.cs" Line="10" Column="1" />
-      <File FileName="Middleware/EmailService.cs" Line="21" Column="80" />
-      <File FileName="RepositoryLayer/Entity/AddressBookEntry.cs" Line="23" Column="4" />
-      <File FileName="RepositoryLayer/Interface/IAddressRL.cs" Line="16" Column="1" />
+      <File FileName="AddressBookAPI/appsettings.json" Line="27" Column="1" />
+      <File FileName="RepositoryLayer/Service/UserRL.cs" Line="23" Column="56" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -50,15 +12,20 @@
           <Node name="AddressBookAPI" expanded="True">
             <Node name="AddressBookAPI" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
             </Node>
-            <Node name="BusinessLayer" expanded="True">
-              <Node name="Interface" expanded="True" />
-              <Node name="Service" expanded="True" />
+            <Node name="Middleware" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Authenticator" expanded="True" />
             </Node>
             <Node name="RepositoryLayer" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Entity" expanded="True" />
-              <Node name="Interface" expanded="True" />
-              <Node name="Service" expanded="True" />
+              <Node name="Service" expanded="True">
+                <Node name="UserRL.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -68,6 +35,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AddressBookAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
