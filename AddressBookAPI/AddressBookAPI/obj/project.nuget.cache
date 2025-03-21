@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4Vpl1SbJZE94u0uyfVxb5MLwiAMZY1ZhPgrU8CLsHc4835Rbxm84RIvAYaOVnTkpgMdKeGiSAjk9FkZv1csKag==",
+  "dgSpecHash": "eNXUbWam5SOp86ojOxdLLsob5a0FvpocHeiKfm7WMXOi1GX6XkfGW2YaL+Pm84txKPlB9i4gdyPFnnQRL5QQIg==",
   "success": true,
   "projectFilePath": "/Users/swapnilgupta/Documents/cg training/AddressBookApi/AddressBookAPI/AddressBookAPI/AddressBookAPI.csproj",
   "expectedPackageFiles": [
@@ -53,6 +53,7 @@
     "/Users/swapnilgupta/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/mimekit/3.5.0/mimekit.3.5.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/nlog/5.4.0/nlog.5.4.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/portable.bouncycastle/1.9.0/portable.bouncycastle.1.9.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/serilog/4.2.0/serilog.4.2.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/serilog.aspnetcore/6.0.0/serilog.aspnetcore.6.0.0.nupkg.sha512",
@@ -63,6 +64,7 @@
     "/Users/swapnilgupta/.nuget/packages/serilog.sinks.console/6.0.0/serilog.sinks.console.6.0.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/serilog.sinks.debug/2.0.0/serilog.sinks.debug.2.0.0.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/serilog.sinks.file/6.0.0/serilog.sinks.file.6.0.0.nupkg.sha512",
+    "/Users/swapnilgupta/.nuget/packages/stackexchange.redis/2.8.31/stackexchange.redis.2.8.31.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/swapnilgupta/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

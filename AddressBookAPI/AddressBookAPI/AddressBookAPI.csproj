@@ -27,6 +27,7 @@
     <PackageReference Include="Serilog.AspNetCore" Version="6.0.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.31" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="System.IO.Pipelines" Version="6.0.0" />
     <PackageReference Include="System.Text.Json" Version="6.0.0" />

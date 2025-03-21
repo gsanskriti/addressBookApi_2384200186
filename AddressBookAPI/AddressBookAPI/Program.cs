@@ -19,8 +19,17 @@ using AddressBookAPI.BusinessLayer.Service;
 using AddressBookAPI.RepositoryLayer.Interface;
 using AddressBookAPI.RepositoryLayer.Service;
 using AddressBookAPI.Middleware;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Register Redis
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+{
+    var configuration = builder.Configuration.GetConnectionString("Redis");
+    return ConnectionMultiplexer.Connect(configuration);
+});
+
 
 // Connection String
 var connectionString = "Server=localhost;Database=AddressBook;User Id=sa;Password=Sanskriti_3009;TrustServerCertificate=True;";
@@ -85,6 +94,7 @@ builder.Services.AddScoped<IUserRL, UserRL>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IRedisCacheService, RedisCacheService>();
 
 
 // Build the App
